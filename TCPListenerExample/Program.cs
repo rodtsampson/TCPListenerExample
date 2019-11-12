@@ -55,6 +55,7 @@ class MyTcpListener
                     byte[] msg = System.Text.Encoding.ASCII.GetBytes(data);
 
                     // Send back a response.
+                    //TODO: OLEDB query to oracle 8i db
                     stream.Write(msg, 0, msg.Length);
                     Console.WriteLine("Sent: {0}", data);
                 }
